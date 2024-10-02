@@ -3,10 +3,10 @@ name: CI worflow
 on: 
   push: 
     branches: ["main"]
-  pull:
+  pull_request:
     branches: ["main"]
 
-job:
+jobs:
   build:
     runs-on: ubuntu-latest
     container: python:3.9-slim
